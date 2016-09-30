@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Uploader</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload</h1>
+        <hr>
+        <h2>Select files from your computer</h2>
+        <div class="file-uploader">
+            <form action="" method="POST" enctype="multipart/form-data">
+                <input type="file" multiple name="" id="">
+                <input type="submit" value="Upload File(s)">
+            </form>
+        </div>
+        
+        <section class="dnd-uploader">
+            <h2>Or Choose files from below</h2>
+            <div class="dnd-console" id="drop-zone">
+                <p>Drop you files here.</p>
+            </div>
+        </section>
+
+
+        <section class="progress">
+            <h3>Progress:</h3>
+            <div class="bar">
+                <div class="bar-fill"></div>
+            </div>
+        </section>
+    </div>
+    <script src="js/global.js"></script>
+</body>
+</html>
