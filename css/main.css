@@ -1,0 +1,38 @@
+.container{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.bar{
+    border:1px solid #ccc;
+    background: #fcfcfc;
+}
+
+.bar-fill{
+    background:steelblue;
+    width:5%;
+    padding: 15px 0;
+    transition: width 0.8s ease-in;
+}
+
+.dnd-console{
+    border:4px dashed gray;
+    min-height: 150px;
+    width: 100%;
+    display: table;
+}
+
+.dnd-console.drop{
+    border-color:black;
+}
+
+.dnd-console p{
+    color:gray;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle
+}
+
+.dnd-console p {
+    color:inherit;
+}
