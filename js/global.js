@@ -1,9 +1,14 @@
 (function(){
     var dropZone = document.getElementById('drop-zone');
 
+    document.getElementById('standard-uploader').addEventListener('click', function(e){
+        e.preventDefault();
+        var standarUploadFiles = document.getElementById('standard-upload-files').files;
+        startUpload(standarUploadFiles);
+    });
+
     var startUpload = function(files){
-        console.log(files);
-        
+        console.log(files);   
     }
     
     dropZone.ondragover = function(e){
@@ -15,7 +20,7 @@
     dropZone.ondrop = function(e){
         e.preventDefault();
         this.classList.remove('drop');
-        console.log(e.dataTransfer.files);  
+        startUpload(e.dataTransfer.files);  
         
     }
 
